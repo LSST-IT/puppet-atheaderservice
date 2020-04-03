@@ -11,7 +11,7 @@ class atheaderservice::firewall (
 
   $web_subnets.each | $location, $source_cidr |
   {
-    firewall { "510 allow HederService web access from ${location}":
+    firewall { "510 allow HeaderService web access from ${location}":
       proto  => tcp,
       dport  => $web_ports,
       source => $source_cidr,

@@ -1,6 +1,7 @@
 ---
 atheaderservice::firewall::web_ports:
   - 8000
+  - 9000
 atheaderservice::firewall::web_subnets:
   'localhost': '127.0.0.1'
 
